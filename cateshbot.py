@@ -130,4 +130,4 @@ async def _help(ctx: SlashContext) :
   wembed.set_footer(text='Catesh Bot', icon_url='https://cdn.discordapp.com/avatars/890941783113076757/4f334efe53eff369bb93ccd234af9b5c.webp?size=240')
   await ctx.send(embed=wembed)
 
-bot.run("MTA2MDE3MzgzMzI5MTcwMjM3NA.GVqO5U.uX3ZLGUimUIvsRXDfdNrGMjLgJ3dDs8ZOkGmyw")
+bot.run("") #insert token
