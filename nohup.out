@@ -1,0 +1,32 @@
+python: can't open file '/home/pi/cateshbot/test.py': [Errno 2] No such file or directory
+An exception has occurred while executing command `cat`:
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/client.py", line 1352, in invoke_command
+    await func.invoke(ctx, **args)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/model.py", line 210, in invoke
+    return await self.func(*args, **kwargs)
+  File "/home/pi/cateshbot/cateshbot.py", line 96, in _cat
+    await ctx.send(embed=cembed)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/context.py", line 256, in send
+    await self._http.post_initial_response(json_data, self.interaction_id, self._token)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord/http.py", line 254, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+An exception has occurred while executing command `cat`:
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/client.py", line 1352, in invoke_command
+    await func.invoke(ctx, **args)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/model.py", line 210, in invoke
+    return await self.func(*args, **kwargs)
+  File "/home/pi/cateshbot/cateshbot.py", line 101, in _cat
+    await ctx.send(file=discord.File(f'image.{extension}'))
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/context.py", line 245, in send
+    await self.defer(hidden=hidden)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord_slash/context.py", line 153, in defer
+    await self._http.post_initial_response(base, self.interaction_id, self._token)
+  File "/home/pi/.local/lib/python3.9/site-packages/discord/http.py", line 254, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+Logged in as CateshBot#4781
+Logged in as CateshBot#4781
+Logged in as Catesh2Bot#2611
